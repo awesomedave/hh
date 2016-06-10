@@ -1,0 +1,40 @@
+
+<ons-page ng-controller="reservation">
+<div class="navigation-bar navigation-bar--transparent" style="position:relative;">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="myMenu.open();">
+      <i class="ion-navicon" style="font-size:32px;vertical-align:-6px;"></i>
+    </span>
+  </div>
+
+  <div class="navigation-bar__center">
+    <img class="small-logo_app" src="lib/onsen/images/new/logo-edits.png"/>
+  </div>
+
+  <div class="navigation-bar__right">
+
+  </div>
+</div> 
+
+
+<div class="roomList" style="position: relative;
+top: 10px;">
+<ons-list class="timeline">
+          <ons-list-item class="timeline-li" modifier="tappable" ng-repeat="i in [1,2,3]">
+            <ons-row>
+
+              <ons-col>
+                <div class="timline-from" style="padding-left: 10px;">
+                  <span class="timeline-name">Mary</span>
+
+                </div>
+
+                <div class="timeline-message">
+                  These are awesome pictures
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+        </ons-list>
+</div>
+	 </ons-page>

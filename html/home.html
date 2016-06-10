@@ -1,0 +1,168 @@
+<ons-page id="propertyList.html" ng-controller="home">
+    
+     <ons-navigator var="myNavigator">
+<div class="navigation-bar navigation-bar--transparent" style="position:relative;">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="myMenu.open();">
+      <i class="ion-navicon" style="font-size:32px;vertical-align:-6px;"></i>
+    </span>
+  </div>
+
+  <div class="navigation-bar__center">
+    <img class="small-logo_app" src="lib/onsen/images/new/logo-edits.png"/>
+  </div>
+
+  <div class="navigation-bar__right">
+
+  </div>
+</div> 
+
+
+<ons-carousel style="height: 230px; width: 300; top: -45px; z-index: -1;" swipeable auto-scroll var="homeslider">
+<ons-carousel-item>
+  <img src="lib/onsen/images/new/kabira-country-club-facility-aerial.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item>
+  <img src="lib/onsen/images/new/swimming-pool-view-at-night.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img src="lib/onsen/images/new/kabira-club-gym.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/swimming-at-kabira.jpg" title="My Caption" />
+  </ons-carousel-item>
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/conference.jpg" title="My Caption" />
+  </ons-carousel-item>
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/conf2.jpg" title="My Caption" />
+  </ons-carousel-item>
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/Terrace.jpg" title="My Caption" />
+  </ons-carousel-item>
+</ons-carousel>
+<div class="home-container">
+<img class="timeline home-tile"
+    src="lib/onsen/images/new/home-tile.png" title="My Caption" />
+    <span class="tile-title"><b>Your hotel guest services</b></span>     
+    <span class="tile-desc wordwrap">Check-in, check-out, Offers & Room Services</span>     
+        <div class="homeCluster">
+          <ons-row>
+<ons-col>
+  <ons-list class="timeline" modifier="inset">
+          
+          <ons-list-item class="timeline-li grad" modifier="chevron" ng-click="myMenu.setMainPage('html/reservations.html', {closeMenu: true});">
+              Reservations
+
+          </ons-list-item>
+              
+        </ons-list>
+        </ons-col>
+
+        <ons-col>
+  <ons-list class="timeline" modifier="inset" ng-click="myMenu.setMainPage('html/offers.html', {closeMenu: true});">
+
+          <ons-list-item class="timeline-li grad" modifier="chevron">
+              Offers
+          </ons-list-item>
+              
+          
+        </ons-list>
+        </ons-col>
+  </ons-row>
+
+<ons-row>
+<ons-col>
+  <ons-list class="timeline" modifier="inset" ng-click="myMenu.setMainPage('html/healthClub.html', {closeMenu: true});">
+          
+          <ons-list-item class="timeline-li grad" modifier="chevron">
+              Health Club
+
+          </ons-list-item>
+              
+        </ons-list>
+        </ons-col>
+
+        <ons-col>
+  <ons-list class="timeline" modifier="inset" ng-click="myMenu.setMainPage('html/dining.html', {closeMenu: true});">
+
+          <ons-list-item class="timeline-li grad" modifier="chevron">
+              Restaurant
+          </ons-list-item>
+              
+          
+        </ons-list>
+        </ons-col>
+  </ons-row>
+
+  <ons-row>
+<ons-col>
+  <ons-list class="timeline" modifier="inset">
+          
+          <ons-list-item class="timeline-li grad" modifier="chevron" ng-click="myMenu.setMainPage('html/spa.html', {closeMenu: true});">
+              Spa
+          </ons-list-item>
+              
+        </ons-list>
+        </ons-col>
+
+        <ons-col>
+  <ons-list class="timeline" modifier="inset">
+
+          <ons-list-item class="timeline-li grad" modifier="chevron">
+              Conferences
+          </ons-list-item>
+              
+          
+        </ons-list>
+        </ons-col>
+  </ons-row>
+
+  <ons-row>
+
+<ons-col>
+  <ons-list class="timeline" modifier="inset">
+          
+          <ons-list-item ng-click="myMenu.setMainPage('html/mapSlideMenu.html', {closeMenu: true});" class="timeline-li" modifier="tappable"><img
+    src="lib/onsen/images/new/Map.jpg" title="My Caption" />
+              Map
+
+          </ons-list-item>
+              
+        </ons-list>
+        </ons-col>
+
+        <ons-col>
+  <ons-list class="timeline" modifier="inset">
+
+          <ons-list-item ng-click="myMenu.setMainPage('html/gallery.html', {closeMenu: true});" class="timeline-li" modifier="tappable"><img
+    src="lib/onsen/images/new/bell2.jpg" title="My Caption" />
+              Gallery
+          </ons-list-item>
+              
+          
+        </ons-list>
+        </ons-col>
+  </ons-row>
+</div>
+
+        </div>
+
+  <ons-row >
+  <div style="text-align: center; left: 25%; position: relative;">
+    <ons-icon icon="facebook" size="32px"></ons-icon>&nbsp&nbsp&nbsp 
+    <ons-icon icon="twitter" size="32px"></ons-icon>&nbsp&nbsp&nbsp <ons-icon icon="youtube" size="32px"></ons-icon>&nbsp&nbsp&nbsp <ons-icon
+    icon="google-plus" size="32px"></ons-icon>&nbsp&nbsp&nbsp <ons-icon
+    icon="pinterest" size="32px"></ons-icon>
+  </div>
+  
+  </ons-row>
+
+<ons-bottom-toolbar class="bottom-toolbar" style="text-align: center; padding-bottom: 23px; background-color: lightgray; height: 20px; font-size: 12px;">
+&copy &nbsp&nbsp <b>Kabira Country Club Hotel</b> 
+</ons-bottom-toolbar>
+  </ons-navigator></ons-page>

@@ -1,0 +1,101 @@
+
+<ons-page ng-controller="reservation">
+<div class="navigation-bar navigation-bar--transparent" style="position:relative;">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="myMenu.open();">
+      <i class="ion-navicon" style="font-size:32px;vertical-align:-6px;"></i>
+    </span>
+  </div>
+
+  <div class="navigation-bar__center">
+    <img class="small-logo_app" src="lib/onsen/images/new/logo-edits.png"/>
+  </div>
+
+  <div class="navigation-bar__right">
+
+  </div>
+</div> 
+
+
+<ons-carousel style="height: 230px; width: 300; top: -45px; z-index: -1;" swipeable auto-scroll var="homeslider">
+<ons-carousel-item>
+  <img src="lib/onsen/images/new/out1.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item>
+  <img src="lib/onsen/images/new/out2.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img src="lib/onsen/images/new/out3.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/out4.jpg" title="My Caption" />
+  </ons-carousel-item>
+
+</ons-carousel>
+
+<div class="title-reserve">HOTEL RESERVATIONS</div>
+<div class="agent-form">
+<div class="room_div">
+<!-- <i class="room_arrow icon ion-ios-arrow-down"></i> -->
+              <select class="reservation_select_room">
+                <option value="delux">Choose your Room</option>
+  <option value="delux">Deluxe Studio Room</option>
+  <option value="1bed">One Bedroom Suite</option>
+  <option value="2bed">Two Bedroom Suite</option>
+  <option value="3bed">Three Bedroom Duplex Penthouse</option>
+  <option value="2cottage">Two Bedroom Cottages</option>
+  <option value="3cottage">Three Bedroom Cottages</option>
+  
+</select> 
+
+</div>
+<div class="reservation_date_div"><i class="date_arrow icon ion-calendar"></i>
+<input type="text" class="reservation_dateranger text-input--underbar datepicker" value="" style="width: 100%; font-size: 16px;">
+</div>
+<div class="reservationCheck" style="position: relative;
+bottom: 25px;">
+<label class="checkbox">
+  <input type="checkbox">
+  <div class="checkbox__checkmark"></div>
+  <span style="position: relative;
+bottom: 6px; font-size: 10px;">MY DATES ARE FLEXIBLE</span>
+</label>
+</div>
+<div class="room_number_div">
+<!-- <i class="room_number_arrow icon ion-ios-arrow-down"></i> -->
+              <select class="reservation_select_room_number">
+                <option value="delux">1 Room</option>
+  <option value="delux">2 Rooms</option>
+  <option value="1bed">3 Rooms</option>
+  <option value="2bed">4 Rooms</option>
+</select> 
+
+</div>
+<div class="guest_number_div">
+<!-- <i class="guest_arrow icon ion-ios-arrow-down"></i> -->
+              <select class="reservation_select_guests">
+                <option value="delux">1 Guest</option>
+  <option value="delux">2 Guests</option>
+  <option value="1bed">3 Guests</option>
+  <option value="2bed">4 Guests</option>
+</select> 
+
+</div>
+<div class="reservation_code">
+<input type="text" class="text-input--underbar" value="" style="position: relative;
+bottom: 26px; width: 100%; font-size: 16px;" placeholder="Enter Code (optional)">
+</div>
+<div class="reservationCheck">
+<label class="checkbox">
+  <input type="checkbox">
+  <div class="checkbox__checkmark"></div>
+  <span style="position: relative;
+bottom: 6px; font-size: 10px;">USE MY REWARDS POINTS</span>
+</label>
+</div>
+<a ng-click="myMenu.setMainPage('html/reservationRoomList.html', {closeMenu: true});" class="button button--large" style="background-color: rgb(42, 42, 42);
+border: 1px double black !important;">Check Availability</a>
+</div>
+
+	 </ons-page>

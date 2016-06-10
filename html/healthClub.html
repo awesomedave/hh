@@ -1,0 +1,67 @@
+<ons-page ng-controller="health">
+<div class="navigation-bar navigation-bar--transparent" style="position:relative;">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="myMenu.open();">
+      <i class="ion-navicon" style="font-size:32px;vertical-align:-6px;"></i>
+    </span>
+  </div>
+
+  <div class="navigation-bar__center">
+    <img class="small-logo_app" src="lib/onsen/images/new/logo-edits.png"/>
+  </div>
+
+  <div class="navigation-bar__right">
+
+  </div>
+</div> 
+<div class="health-title health-main">Health and Leisure</div>
+<ons-carousel style="height: 230px; width: 300; top: 27px;" swipeable auto-scroll var="healthslider"> 
+<ons-carousel-item>
+  <img src="lib/onsen/images/new/gym1.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item>
+  <img src="lib/onsen/images/new/gym2.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img src="lib/onsen/images/new/kabira-club-gym.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/gym3.jpg" title="My Caption" />
+  </ons-carousel-item>
+</ons-carousel>
+
+<div class="gym-subtitle">Gym</div>
+
+	<div class="health-form">
+          <span style="font-size: 14px;">Our gym is the biggest and best equipped in East Africa. Coupled with our world-class sporting and recreational facilities, we cater for a wide range of fitness and wellness pursuits.</span>
+        <br><span style="font-size: 14px;">All our equipment is by Techno Gym, the leading worldwide supplier of gym and fitness equipment and more than three-quarters of our treadmills are fitted with VISIOWEB. This platform allows you to integrate peripheral functionality into your exercise regime, so you can watch video tutorials or TV, or even connect your iPod or iPhone and enjoy your personal play list. A qualified fitness trainer is on call should you require personal or professional instruction.</span>
+            
+        </div>
+
+          <div class="health-bonus"> 
+          <ons-list-item class="mainList list-item-container">
+          <img src="lib/onsen/images/new/exercise-bikes.jpg" style="width: 100%">
+          </ons-list-item> 
+
+          </div> 
+
+          <ons-list> 
+  <ons-list-item modifier="chevron"
+    class="menu-items"
+    ng-click="myMenu.setMainPage('html/swimming.html', {closeMenu: true})">
+  &nbsp&nbsp&nbsp The Swimming Pools </ons-list-item>
+
+  <ons-list-item modifier="chevron"
+    class="menu-items"
+    ng-click="myMenu.setMainPage('html/reservations.html', {closeMenu: true});">
+  &nbsp&nbsp&nbsp The Courts </ons-list-item> 
+
+  <ons-list-item modifier="chevron"
+    class="menu-items" ng-click="myMenu.setMainPage('html/healthClub.html', {closeMenu: true});"> &nbsp&nbsp&nbsp Sports Field </ons-list-item>
+    
+  <ons-list-item modifier="chevron" class="menu-items" ng-click="myNavigator.pushPage('html/offers.html'); myMenu.close();">&nbsp&nbsp&nbsp Exercise Classes</ons-list-item> 
+
+    </ons-list> 
+
+	 </ons-page>

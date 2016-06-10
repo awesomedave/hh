@@ -1,0 +1,23 @@
+<ons-navigator ng-controller="GalleryController">
+   <ons-page style="background-color: black;">
+<div class="navigation-bar navigation-bar--transparent" style="position:relative;">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="myMenu.open();">
+      <i class="ion-navicon" style="font-size:32px;vertical-align:-6px;"></i>
+    </span>
+  </div>
+
+  <div class="navigation-bar__center">
+    <img class="small-logo_app" src="lib/onsen/images/new/logo-edits.png"/>
+  </div>
+
+  <div class="navigation-bar__right">
+
+  </div>
+</div> 
+      <div class="grid">
+        <div class="grid-item" ng-repeat="item in items"><img ng-click="selectItem($event, $index);" src="{{item.src}}"/></div>
+      </div>
+
+    </ons-page>
+</ons-navigator>

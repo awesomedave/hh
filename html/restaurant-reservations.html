@@ -1,0 +1,92 @@
+<ons-page ng-controller="dine">
+<div class="navigation-bar navigation-bar--transparent" style="position:relative;">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="myMenu.open();">
+      <i class="ion-navicon" style="font-size:32px;vertical-align:-6px;"></i>
+    </span>
+  </div>
+
+  <div class="navigation-bar__center">
+    <img class="small-logo_app" src="lib/onsen/images/new/logo-edits.png"/>
+  </div>
+
+  <div class="navigation-bar__right">
+
+  </div>
+</div> 
+
+<div class="dining-title-reserve">Terraces at Kabira Country Club</div>
+<div class="rating"><div class="rating-num">
+            <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+            <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+            <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+            <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+            <ons-icon icon="fa-star-half" fixed-width="false"></ons-icon>
+            
+        </div> </div>
+        
+        <div style="position: relative; top: 80px; margin-left: 20px; color: gray; font-size: 14px; text-align: center" >450 Reviews</div>
+        
+<ons-carousel style="height: 230px; width: 300; top: 93px;" swipeable auto-scroll var="diningslider"> 
+<ons-carousel-item>
+  <img src="lib/onsen/images/new/res2.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item>
+  <img src="lib/onsen/images/new/res3.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img src="lib/onsen/images/new/res4.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/res1.jpg" title="My Caption" />
+  </ons-carousel-item>
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/res5.jpg" title="My Caption" />
+  </ons-carousel-item>
+</ons-carousel>
+
+<div class="reservation_date_div" style="top:95px;"><i class="date_arrow icon ion-calendar"></i>
+<input type="text" class="reservation_dateranger text-input--underbar datepicker" value="" style="width: 100%; font-size: 16px;">
+</div>
+
+<div class="reservation_date_div" style="top:105px;"><i class="date_arrow icon ion-android-time"></i>
+<input type="text" class="reservation_timeranger text-input--underbar timepicker" value="Pick a Time" style="width: 100%; font-size: 16px;">
+</div>
+
+<div class="room_div" style="top: 144px;
+position: relative;
+margin: 10px;top: 144px;
+position: relative;
+margin: 10px;">
+<i class="room_arrow icon ion-ios-arrow-down"></i>
+              <select class="reservation_select_room">
+                <option value="delux">Number of people</option>
+  <option value="delux">1</option>
+  <option value="1bed">2</option>
+  <option value="2bed">3</option>
+  <option value="3bed">4</option>
+  <option value="2cottage">5</option>
+  <option value="3cottage">6</option>
+  <option value="3cottage">7</option>
+  <option value="3cottage">8</option>
+  <option value="3cottage">9</option>
+  <option value="3cottage">10</option>
+  
+</select> 
+
+</div>
+
+<a class="button button--large" style="background-color: rgb(42, 42, 42);
+border: 1px double black !important;
+top: 134px;
+margin: 10px;
+width: 95%;">Confirm</a>
+
+
+
+
+
+
+	 </ons-page>

@@ -1,0 +1,49 @@
+
+<ons-page ng-controller="reservation">
+<div class="navigation-bar navigation-bar--transparent" style="position:relative;">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="myMenu.open();">
+      <i class="ion-navicon" style="font-size:32px;vertical-align:-6px;"></i>
+    </span>
+  </div>
+
+  <div class="navigation-bar__center">
+    <img class="small-logo_app" src="lib/onsen/images/new/logo-edits.png"/>
+  </div>
+
+  <div class="navigation-bar__right">
+
+  </div>
+</div> 
+
+<div class="room_list_title">Choose a Room Rate</div>
+<div style="position: relative; top: 30px; padding: 10px; font-size: 12px;"><b>Your Stay: </b><small>05/24/16 - 05/31/16, 1 room, 2 guests/room</small><a> Edit</a></div>
+<div class="roomList" style="position: relative;
+top: 20px;">
+<ons-list class="timeline">
+          <ons-list-item class="timeline-li" modifier="tappable" ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
+            <ons-row>
+              <ons-col width="50px">
+                <img ng-src="lib/onsen/images/new/room-slider.jpg" class="timeline-image">
+              </ons-col>
+
+              <ons-col>
+                <div class="timline-from" style="padding-left: 10px;">
+                  <span class="timeline-name">Deluxe Studio Room</span>
+
+                </div>
+
+                <div class="timeline-message">
+                  The rate for this room changes on 05/26/16 to 499 (USD) per night
+                </div>
+
+                <div class="timeline-rate-details"><a href="">Rate details</a></div>
+                <div class="timeline-room-details"><a href="">Room details</a></div>
+                <div class="timeline-room-price">329 <small style="font-size: 11px;">USD/night</small></div>
+                <div class="timeline-select-room"><button class="selectRateButton button">Select</button></div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+        </ons-list>
+</div>
+	 </ons-page>

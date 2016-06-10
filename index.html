@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- CSP support mode (required for Windows Universal apps): https://docs.angularjs.org/api/ng/directive/ngCsp -->
+<html lang="en" ng-app="app" ng-csp>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+
+<!-- JS dependencies (order matters!) -->
+
+<!-- <script src="lib/angular/ng-cordova.min.js"></script> -->
+<!-- CSS dependencies -->
+<link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
+<link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css" />
+<link rel="stylesheet" href="lib/onsen/css/custom.css" />
+<link rel="stylesheet" href="lib/onsen/css/kabira.css" />
+<link rel="stylesheet" href="lib/onsen/css/timeline.css" />
+<link rel="stylesheet" href="lib/onsen/css/details.css">
+<link rel="stylesheet" href="lib/onsen/css/searchTopBar.css">
+<link rel="stylesheet" href="lib/onsen/css/largeButton.css">
+<link rel="stylesheet" href="lib/onsen/css/animate.css">
+<link rel="stylesheet" href="lib/onsen/css/portfolio.css">
+
+
+<link rel="stylesheet" href="lib/pickadate.js-3.5.6/lib/themes/default.css">
+<link rel="stylesheet" href="lib/pickadate.js-3.5.6/lib/themes/default.date.css">
+<link rel="stylesheet" href="lib/pickadate.js-3.5.6/lib/themes/default.time.css">
+
+<link rel="stylesheet" href="lib/onsen/css/location.css" />
+<!-- CSP support mode (required for Windows Universal apps) -->
+<link rel="stylesheet" href="lib/angular/angular-csp.css" />
+<script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js">
+        </script>
+		
+		<!-- Core CSS file -->
+<link rel="stylesheet" href="dist/photoswipe.css"> 
+
+<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+<link rel="stylesheet" href="dist/default-skin/default-skin.css"> 
+
+<!-- Core JS file -->
+<script src="dist/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="dist/photoswipe-ui-default.min.js"></script> 
+<!-- --------------- App init --------------- -->
+
+<title>Kabira!</title>
+
+
+</head>
+
+<body ng-controller="main">
+	<ons-sliding-menu menu-page="html/menu.html"
+		main-page="html/imageSlides.html" side="left" var="myMenu"
+		type="overlay" max-slide-distance="260px"
+		close-on-tap> </ons-sliding-menu>
+
+	<!-- Cordova reference -->
+  <script src="lib/onsen/js/onsenui.min.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/onsen/js/angular-onsenui.min.js"></script>
+  <script src="lib/browser.min.js"></script>
+
+	<script src="lib/jquery-1.10.2.js"></script>
+	<script src="lib/pickadate.js-3.5.6/lib/picker.js"></script>
+  <script src="lib/pickadate.js-3.5.6/lib/picker.date.js"></script>
+  <script src="lib/pickadate.js-3.5.6/lib/picker.time.js"></script>
+    <script src="lib/filterable.pack.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/masonry.pkgd.min.js"></script>
+	<!-- <script src="cordova.js"></script> -->
+	<script>
+        var module = angular.module('app', ['onsen']);
+    </script>
+    <script src="scripts/Factory/sliderFactory.js"></script>
+
+	<script src="scripts/Controllers/reservationsCtrl.js"></script>
+	<script src="scripts/Controllers/homeCtrl.js"></script>
+	<script src="scripts/Controllers/offerCtrl.js"></script>
+	<script src="scripts/Controllers/healthCtrl.js"></script>
+	<script src="scripts/Controllers/diningCtrl.js"></script>
+	<script src="scripts/Controllers/mainCtrl.js"></script>
+	<script src="scripts/Controllers/mapCtrl.js"></script>
+	<script src="scripts/Controllers/galleryCtrl.js"></script>
+	<script src="scripts/Controllers/gridCtrl.js"></script>
+	<script src="scripts/Controllers/photoSwipeCtrl.js"></script>
+	
+</body>
+</html>

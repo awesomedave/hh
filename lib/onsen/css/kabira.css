@@ -1,0 +1,750 @@
+/* styles for Kabira App */
+.grid-item { width: 80px; height: 80px; margin-bottom: 20px;}
+.grid { top: 30px;}
+.gutter-sizer { width: 4%; }
+
+.carousel-main {
+  overflow-y: hidden !important;
+}
+
+.splash div.page__background {
+  background-image: url("../images/new/splash.png");
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-color: black;
+}
+
+@font-face {
+  font-family: 'PrimaNova';
+  src: url('Proxima Nova Alt Condensed Light.otf');
+}
+
+body {
+  font-family: 'PrimaNova' !important;
+}
+
+.page__content {
+    background-color: white !important;
+	
+}
+
+.grad {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #EFEFEF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #EFEFEF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #EFEFEF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #EFEFEF); /* Standard syntax */
+} 
+
+.menu-home {
+  border: none !important;
+  border-top: none !important;
+}
+
+.health-bonus {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mainList {
+  margin: 0px 10px 0px 10px !important;
+  padding: 10px 10px 10px 10px !important;
+  color: white;
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(197, 197, 197) !important;
+  border-top: 1px solid rgb(197, 197, 197) !important;
+  border-bottom: 1px solid rgb(197, 197, 197) !important;
+}
+
+@media(max-width:320px) {
+  .homeCluster {
+    position: relative;
+    bottom: 105px;
+    height: 455px;
+  }
+
+  .home-tile{
+    top: -42px;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .tile-desc {
+    position: relative;
+    top: -122px;
+    margin-left: 128px;
+    width: 65%;
+    display: block;
+    font-size: 14px;
+  }
+
+  .tile-title {
+    position: relative;
+    top: -124px;
+    left: 120px;
+  }
+
+.logo_app {
+    z-index: 2;
+    position: relative;
+    bottom: -10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .main_label {
+    color: white !important;
+    text-align: center;
+    position: relative;
+    bottom: 175px;
+    z-index: 2;
+    padding: 0 30px 0 30px;
+}
+
+.main_label_alt {
+    bottom: 180px;
+
+}
+
+.pTag{
+  text-align: center !important;
+  position: relative;
+  bottom: -7px;
+  opacity: 0.7;
+  font-size: 15px;
+  color: #9A9696;
+}
+
+.skipTag{
+  float: right !important;
+  padding: 10px;
+  top: 35px;
+  position: relative;
+  color: white;
+}
+
+.skipTag-alt {
+    top: 34px;
+    position: relative;
+    left: 45%;
+    height: 28px !important;
+
+}
+
+.skipTag-alt span.ng-scope {
+  bottom: 5px !important;
+  position: relative;
+}
+
+.item-label {
+    font-size: 18px;
+    font-weight: bold;
+    left: 0;
+    /* line-height: 1; */
+    position: relative;
+    top: -249px;
+    width: 100%;
+    opacity: 0.8;
+    height: 155px;
+    background-color: black;
+}
+
+.item-label-first {
+    position: relative;
+    top: -230px;
+
+}
+
+.item-label-last {
+    position: relative;
+    top: -227px;
+
+}
+
+}
+
+@media screen and ( max-width :320px), screen and ( min-height : 480px ) {
+.logo_app {
+    z-index: 2;
+    position: relative;
+    bottom: -10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .main_label {
+    color: white !important;
+    text-align: center;
+    position: relative;
+    bottom: 170px;
+    z-index: 2;
+    padding: 0 30px 0 30px;
+}
+
+.main_label_alt {
+    bottom: 187px;
+
+}
+
+.pTag{
+  text-align: center !important;
+  position: relative;
+  bottom: -7px;
+  opacity: 0.7;
+  font-size: 15px;
+  color: #9A9696;
+}
+
+.skipTag{
+  float: right !important;
+  padding: 10px;
+  top: 35px;
+  position: relative;
+  color: white;
+}
+
+.skipTag-alt {
+    top: 40px;
+    position: relative;
+    left: 45%;
+    height: 35px !important;
+
+}
+
+.skipTag-alt span.ng-scope {
+  bottom: 5px !important;
+  position: relative;
+}
+
+.item-label {
+    font-size: 18px;
+    font-weight: bold;
+    left: 0;
+    position: relative;
+    top: -250px;
+    width: 100%;
+    opacity: 0.8;
+    height: 155px;
+    background-color: black;
+}
+
+.item-label-first {
+    position: relative;
+    top: -225px;
+
+}
+
+.item-label-last {
+    position: relative;
+    top: -235px;
+
+}
+}
+
+@media ( min-width :360px) {
+
+  .spa-title {
+    position: absolute;
+    background-color: #616161;
+    width: 100%;
+    padding-left: 10px;
+    top: 70px;
+    z-index: 9;
+    opacity: 0.8;
+    color: white;
+    /*text-align: center;*/
+    font-size: 17px;
+  }
+
+  .spa-subtitle {
+    position: relative;
+    left: -1px;
+    top: 7px;
+    background-color: white;
+    opacity: 0.6;
+    text-align: center;
+    font-weight: bold;
+    color: #505050;
+  }
+
+  .dining-title {
+    position: absolute;
+    width: 100%;
+    padding-left: 10px;
+    top: 110px;
+    z-index: 9;
+    opacity: 0.8;
+    color: black;
+    font-size: 20px;
+    font-size-adjust: 0.54;
+  }
+
+  .dining-subtitle {
+    position: relative;
+    top: 115px;
+    background-color: white;
+    opacity: 0.6;
+    font-weight: bold;
+    color: #000;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  
+  .dinning-spacer {
+    border-bottom: 1px solid #ddd !important;
+    padding: 27px 325px 10px 10px;
+    top: 145px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .dinning-image {
+    width: 95%;
+    top: 200px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .dining-name {
+    position: relative;
+    padding: 10px;
+    top: 185px;
+    color: black;
+    font-size: 18px;
+    font-size-adjust: 0.54;
+  }
+  
+  .dining-reserve-btn {
+    float: right;
+  }
+  
+  .dining-form  {
+    position: relative;
+    padding: 10px;
+    top: 200px;
+    text-align: justify;
+  }
+  
+  .dining-title-reserve {
+    position: absolute;
+    width: 100%;
+    padding-left: 10px;
+    top: 80px;
+    z-index: 9;
+    opacity: 0.8;
+    color: black;
+    font-size: 20px;
+    font-size-adjust: 0.54;
+  }
+
+  .swim-title {
+    position: absolute;
+    background-color: #616161;
+    width: 100%;
+    padding-left: 10px;
+    top: 68px;
+    z-index: 9;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .swim-subtitle {
+    position: relative;
+    left: -1px;
+    top: 5px;
+    background-color: white;
+    opacity: 0.6;
+    text-align: center;
+    font-weight: bold;
+    color: #505050;
+  }
+
+  .gym-subtitle {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding-left: 10px;
+    z-index: 9;
+    opacity: 0.8;
+    color: #676565;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+  }
+
+  .no-bottom-border {
+    border-bottom: none !important;
+  }
+
+  .discount-title {
+    background-color: white;
+    opacity: 0.6;
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: 7px;
+  }
+
+  .discount-form {
+    top: 70px;
+    position: relative;
+  }
+
+  .subtitle-offer {
+    position: relative;
+    background-color: white;
+    opacity: 0.6;
+    color: #545454;
+    top: 11px;
+    text-align: center;
+    font-weight: bold
+  }
+  
+  .offers-title {
+    text-align: center;
+    top: 10px;
+    position: relative;
+    font-size: 16px;
+  }
+
+  .menu-items{
+    background-color: #474747;
+    color: #fff;
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+  }
+
+  .health-form {
+    position: relative;
+    bottom: -10px;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .health-title {
+    position: absolute;
+    background-color: #616161;
+    width: 100%;
+    top: 72px;
+    z-index: 9;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+
+  }
+
+  .health-main {  
+    top: 70px;
+  }
+
+  .health-title-reserve {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding-left: 10px;
+    z-index: 9;
+    opacity: 0.8;
+    color: #676565;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .title-reserve {
+    position: relative;
+    top: 0px;
+    font-size: 25px;
+    color: #505050;
+    padding-left: 10px;
+    font-weight: lighter;
+}
+  }
+
+  .agent-email-form {
+    position: relative;
+    bottom: -10px;
+  }
+
+  .agent-form {
+    position: relative;
+    bottom: -25px;
+    border: none;
+    padding: 10px;
+  }
+
+  .tile-title {
+    position: absolute;
+    top: 22px;
+    left: 120px;
+    float: left;
+    font-weight: 600;
+  }
+
+  .tile-desc {
+    position: absolute;
+    top: 45px;
+    left: 123px;
+    font-size: 15px;
+    float: left;
+    overflow-wrap: break-word;
+    width: 50%;
+  }
+
+  .month {
+    right: 15px;
+    position: relative;
+    top: -25px;
+  }
+
+  .date-year {
+    position: relative;
+    right: 50px;
+    
+  }
+
+  .calendar-icon {
+    left: 95px;
+    position: relative;
+    top: -15px;
+  }
+
+  .social {
+    min-height: 100px;
+  }
+
+  .extra {
+    color: gray;
+  }
+
+  .copyright {
+    height: 35px !important;
+    background-color: #FFF;
+    color: #000;
+    text-shadow: 0px 0px 0px !important;
+    padding: 0px 0px 0px 20px;
+    min-height: 45px !important;
+    line-height: 45px !important;
+    font-size: 12px;
+  }
+
+  .menu-image {
+    left: -21px;
+    top: -6px;
+    position: relative;
+}
+
+  .logo_app {
+    z-index: 2;
+    position: relative;
+    bottom: -10px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .small-logo_app {
+    z-index: 2;
+    position: relative;
+    bottom: 0px;
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    height: 150%;
+  }
+
+  .home-container {
+    position: relative;
+    bottom: 40px;
+  }
+
+  .home-tile {
+    overflow-x:hidden;
+    padding-left: 10px;
+  }
+
+  .main_label {
+    color: white !important;
+    text-align: center;
+    position: relative;
+    bottom: 85px;
+    z-index: 2;
+    padding: 0 30px 0 30px;
+}
+
+.main_label_alt {
+    bottom: 88px;
+
+}
+
+.pTag{
+  text-align: center !important;
+  position: relative;
+  bottom: -7px;
+  opacity: 0.7;
+  font-size: 15px;
+  color: #9A9696;
+}
+
+.skipTag{
+  float: right !important;
+  padding: 10px;
+  top: 35px;
+  position: relative;
+  color: white;
+}
+
+.skipTag-alt {
+    top: 35px;
+    position: relative;
+    left: 40%;
+    height: 28px !important;
+
+}
+
+.skipTag-alt span.ng-scope {
+  bottom: 5px !important;
+  position: relative;
+}
+
+.item-label {
+    font-size: 18px;
+    font-weight: bold;
+    left: 0;
+    /* line-height: 1; */
+    position: relative;
+    top: -157px;
+    width: 100%;
+    opacity: 0.8;
+    height: 155px;
+    background-color: black;
+}
+
+.item-label-first {
+    position: relative;
+    top: -138px;
+
+}
+
+.item-label-last {
+    position: relative;
+    top: -135px;
+
+}
+
+/*Reservation Page*/
+.reservation_select_room {
+  width: 100%;
+  background-color: transparent;
+  border: medium none;
+  margin-top: 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  position: relative;
+  bottom: 33px;
+}
+
+.room_arrow {
+  font-size: 20px;
+  color: black;
+  float: left !important;
+  position: relative;
+  left: 94%;
+  top: -5px;
+}
+
+.date_arrow {
+  font-size: 18px;
+  color: black;
+  float: left !important;
+  position: relative;
+  left: 94%;
+  top: 27px;
+}
+
+.reservation_date_div {
+  position: relative;
+  bottom: 35px;
+}
+
+.reservation_select_room_number {
+  width: 100%;
+  background-color: transparent;
+  border: medium none;
+  margin-top: 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  position: relative;
+  bottom: 53px;
+}
+
+.room_number_arrow {
+  font-size: 21px;
+  color: black;
+  position: relative;
+  left: 94%;
+  bottom: 22px;
+}
+
+.reservation_select_guests {
+  width: 100%;
+  background-color: transparent;
+  border: medium none;
+  margin-top: 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  position: relative;
+  bottom: 55px;
+}
+
+.guest_arrow {
+  font-size: 21px;
+  color: black;
+  position: relative;
+  left: 94%;
+  bottom: 26px;
+}
+
+/*Reservation room list css */
+.room_list_title{
+  position: relative;
+  top: 32px;
+  font-size: 18px;
+  color: #505050;
+  padding-left: 10px;
+  font-weight: lighter;
+}
+
+.timeline-rate-details {
+  font-size: 11px;
+  position: relative;
+  right: 50px;
+  top: 10px;
+}
+
+.timeline-room-details{
+  position: relative;
+  font-size: 11px;
+  left: 25px;
+  bottom: 1px;
+}
+
+.timeline-room-price {
+  position: relative;
+  right: 50px;
+  top: 22px;
+  font-size: 21px;
+}
+.selectRateButton {
+  position: relative;
+  left: 210px;
+  bottom: 5px;
+  padding: 0px 10px !important;
+}
+
+}

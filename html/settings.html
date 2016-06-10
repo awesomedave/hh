@@ -1,0 +1,64 @@
+<ons-page id="settings.html"> <ons-toolbar>
+	<div class="left" style="font-size: 16px;">
+		<ons-toolbar-button ng-click="myMenu.toggle()"> <ons-icon
+			icon="ion-navicon" size="28px" fixed-width="false"></ons-icon> </ons-toolbar-button>
+		
+	</div>
+	<!-- ion-android-share-alt -->
+	<div class="center">
+		<span class="settingsTitle">Settings</span>
+	</div>
+	<div class="right">
+	</div>
+	</ons-toolbar>   
+          
+                <ons-list class="settings-list">
+        <ons-list-item>
+         Notifications
+          <ons-switch var="mySwitch" onchange="" modifier="list-item"></ons-switch>
+        </ons-list-item>
+
+      </ons-list>
+          
+          <div class="settings-header">Contact Us</div>
+          <ons-list class="settings-list">
+                    <ons-list-item style="padding:10px">
+            <ons-row>
+
+              <ons-col>
+                <div class="timline-from"><i class="fa fa-bullhorn fa-lg"></i>
+                  <span class="timeline-name">Feedback</span>
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+          
+          <ons-list-item style="padding:10px">
+            <ons-row>
+
+              <ons-col>
+                <div class="timline-from"><i class="fa fa-star-half-empty fa-lg"></i>
+                  <span class="timeline-name">Rate Us</span>
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+          
+          <ons-list-item style="padding:10px">
+            <ons-row>
+
+              <ons-col>
+                <div class="timline-from">
+                  <span class="timeline-name"><b>Version</b></span>
+                  
+                </div>
+                <div class="timeline-message">
+                  1.2.3
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+        </ons-list>
+	
+
+	</ons-page>

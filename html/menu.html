@@ -1,0 +1,46 @@
+<ons-page id="menu.html" modifier="menu-page">
+	<ons-list class="menu-list"> 
+	<ons-list-item
+		class="menu-item menu-home"
+		ng-click="myMenu.setMainPage('html/home.html', {closeMenu: true});">
+	&nbsp&nbsp&nbsp<ons-icon icon="home"></ons-icon>&nbsp&nbsp Home </ons-list-item>
+	<ons-list-item class="menu-item"> <img class="menu-image" src="lib/onsen/images/new/menu-tile-small.png">
+	&nbsp&nbsp&nbsp  </ons-list-item> 
+	<ons-list-item
+		class="menu-item"
+		ng-click="myMenu.setMainPage('html/reservations.html', {closeMenu: true});">
+	&nbsp&nbsp&nbsp Reservations </ons-list-item> 
+	<ons-list-item
+		class="menu-item" ng-click="myMenu.setMainPage('html/healthClub.html', {closeMenu: true});"> &nbsp&nbsp&nbsp Health Club </ons-list-item>
+		
+	<ons-list-item class="menu-item" ng-click="myMenu.setMainPage('html/offers.html', {closeMenu: true});">&nbsp&nbsp&nbsp Offers</ons-list-item> 
+
+		<ons-list-item 
+		class="menu-item" ng-click="myMenu.setMainPage('html/conferences.html', {closeMenu: true});">&nbsp&nbsp&nbsp Conferences</ons-list-item>
+		
+		<ons-list-item 
+		class="menu-item" ng-click="myMenu.setMainPage('html/spa.html', {closeMenu: true});">&nbsp&nbsp&nbsp Spa</ons-list-item>
+
+	<ons-list-item class="menu-item" ng-click="myNavigator.pushPage('html/contact.html'); myMenu.close();"> &nbsp&nbsp&nbsp Contact Us </ons-list-item> 
+
+	<ons-list-item class="menu-item social" ng-click=""> &nbsp&nbsp&nbsp STAY CONNECTED 
+	<ons-row >
+  <div style="text-align: center; left: 12%; position: relative;">
+  	<ons-icon icon="facebook"></ons-icon>&nbsp&nbsp&nbsp 
+  	<ons-icon icon="twitter"></ons-icon>&nbsp&nbsp&nbsp 
+  	<ons-icon icon="youtube"></ons-icon>&nbsp&nbsp&nbsp 
+  	<ons-icon icon="google-plus"></ons-icon>&nbsp&nbsp&nbsp 
+  	<ons-icon icon="pinterest"></ons-icon></div>
+  
+  </ons-row>
+	</ons-list-item>
+	<ons-list-item class="menu-item extra" ng-click=""> &nbsp&nbsp&nbsp Terms of use </ons-list-item>
+
+	<ons-list-item class="menu-item extra" ng-click=""> &nbsp&nbsp&nbsp Privacy statement </ons-list-item>
+
+	<ons-list-item class="menu-item extra" ng-click=""> &nbsp&nbsp&nbsp Version (1.2.30) </ons-list-item>
+
+	<ons-list-item class="copyright" ng-click=""> &nbsp&nbsp&nbsp &copy &nbsp 2016 Kabira Country Hotel </ons-list-item>
+
+		</ons-list> 
+		</ons-page> 

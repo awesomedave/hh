@@ -1,0 +1,85 @@
+<ons-page ng-controller="offer"> 
+
+<div class="navigation-bar navigation-bar--transparent" style="position:relative;">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="myMenu.open();">
+      <i class="ion-navicon" style="font-size:32px;vertical-align:-6px;"></i>
+    </span>
+  </div>
+
+  <div class="navigation-bar__center">
+    <img class="small-logo_app" src="lib/onsen/images/new/logo-edits.png"/>
+  </div>
+
+  <div class="navigation-bar__right">
+
+  </div>
+</div> 
+<div class="health-title ">Offers</div>
+<ons-carousel style="height: 230px; width: 300; top: 30px;" swipeable auto-scroll var="offerslider"> 
+<ons-carousel-item>
+  <img src="lib/onsen/images/new/offer.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item>
+  <img src="lib/onsen/images/new/couple.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img src="lib/onsen/images/new/gym4.jpg" title="My Caption" />
+  </ons-carousel-item> 
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/massage.jpg" title="My Caption" />
+  </ons-carousel-item>
+  <ons-carousel-item> 
+  <img
+    src="lib/onsen/images/new/tennis.jpg" title="My Caption" />
+  </ons-carousel-item>
+</ons-carousel>
+
+<div class="subtitle-offer">Kabira Escapades</div>
+
+  <div class="health-form" style="font-size: 14px;">
+          <span>Please book using our special package and get.</span>
+        <br>
+        <ul>
+          <li>Discounts on accomodation</li>
+          <li>Delicious breakfast to enjoy alone or as a couple</li>
+          <li>Health Club, Sports, leisure Facilities</li>
+          <li>50 minutes massage</li>
+          <li>Wi-fi in all rooms</li>
+          <li>Welcome drink on arrival</li>
+          <li>Plus late check out</li>
+            
+        </ul>
+          <button class="button button--large" ng-click="myMenu.setMainPage('html/discounts.html', {closeMenu: true})">Redeem Discount</button>  
+        </div>
+
+  <!-- <ons-list class="agent-email-form">
+           
+<ons-list-item>
+                <div><b>Kabira Country Club</b></div>
+            </ons-list-item>
+
+                        <ons-list-item>
+                <img src="lib/onsen/images/new/swimming-pool-view-at-night.jpg" title="My Caption" />
+            </ons-list-item>
+
+            <ons-list-item>
+                <b>Festive Promotions</b>
+                <div>FULL BOARD - Includes Spa and 10% discount on selected drinks
+                $ 220 Studio room
+                $300 One Bed Suite</div>
+
+                <div>STAY FOR 3 NIGHTS AND PAY FOR 2 NIGHTS
+                Studio Room - 1st night $278 , 2nd Night $278 and 3rd night complementary
+                One Bedroom suite - 1sr night $353, 2nd Night $118</div>
+
+                <div>For Bookings and Other information call +256 750033443</div>
+
+ 
+                
+            </ons-list-item>
+        </ons-list> -->
+
+   </ons-page>
+
